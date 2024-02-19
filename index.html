@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Cosmo India Pvt Ltd</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="logo.png" rel="icon" />
+    <link href="apple-touch-icon.png" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"/>
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="animate.min.css" rel="stylesheet" />
+    <link href="aos.css" rel="stylesheet" />
+  
+    <!-- <link href="boxicons.min.css" rel="stylesheet" /> -->
+    <!-- <link href="glightbox.min.css" rel="stylesheet" /> -->
+    <!-- <link href="swiper-bundle.min.css" rel="stylesheet" /> -->
+
+    <!-- Template Main CSS File -->
+
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-icons.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+    
+
+
+
+
+    <!-- Add Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+
+
+<!-- Add Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  </head>
+
+  <body>
+    <!-- ======= Top Bar ======= -->
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-clock d-flex align-items-center ms-2 ms-md-4">
+              <span id="current-date"></span>
+            </i>
+          </div>
+
+          <div
+            class="languages d-flex align-items-center mt-2 mt-md-0 justify-content-end"
+          >
+            <ul class="list-unstyled mb-0">
+              <li id="google_element"><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-lg-between"
+      >
+        <img src="logo.png" width="70px" height="70px" alt="" />
+        <h1 class="logo me-auto me-lg-0">
+          <a href="index.html">Cosmo India</a>
+        </h1>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>About Us</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="aboutus.html">About Cosmo India</a></li>
+                <li><a href="mission.html">Mission Statement</a></li>
+                <li><a href="plants.html">Plants and Facilities</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="comming.html">Awards and Achievements</a></li>
+                <li><a href="comming.html">Directors</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="products.html">Products</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="customers.html">Customers</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="careers.html">Careers</a>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Login</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="https://sites.google.com/cosmo.co.in/cosmoindiapvtltd/home" target="_blank">Employee Login</a></li>
+                <li><a href="comming.html" target="_blank">Customer Login</a></li>
+                <li><a href="comming.html" target="_blank">Vendor Login</a></li>
+
+
+              </ul>
+            </li>
+
+            <li>
+              <a class="nav-link scrollto" href="contact.html">Contact</a>
+            </li>
+            <form class="form-inline my-2 my-lg-0 d-lg-flex" style="margin-left: 20px;">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="margin-right: 10px;">
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+                        <li class="dropdown">
+              <a href="#" onclick="changeCountry('India')">
+                <span id="selectedCountry">Country</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li><a href="#" onclick="changeCountry('India')">India</a></li>
+                <li><a href="#" onclick="changeCountry('United Kingdom')">United Kingdom</a></li>
+                <li><a href="#" onclick="changeCountry('USA')">USA</a></li>
+                <li><a href="#" onclick="changeCountry('Canada')">Canada</a></li>
+                <li><a href="#" onclick="changeCountry('Australia')">Australia</a></li>
+                <li><a href="#" onclick="changeCountry('Japan')">Japan</a></li>
+                <li><a href="#" onclick="changeCountry('Korea')">Korea</a></li>
+                <li><a href="#" onclick="changeCountry('UAE')">UAE</a></li>
+                <li><a href="#" onclick="changeCountry('Germany')">Germany</a></li>
+                <li><a href="#" onclick="changeCountry('Spain')">Spain</a></li>
+                <li><a href="#" onclick="changeCountry('France')">France</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+       
+      </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="hero" class="d-flex align-items-center">
+        <div class="container-fluid position-relative text-center text-lg-start" style="margin: 0px; padding: 0px;">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" >
+                        <img src="bg1.jpg" class="d-block w-100" alt="Wild Landscape"  />
+                        <div class="carousel-content">
+                            <h1>Welcome to <span>Cosmo India Pvt Ltd</span></h1>
+                            <h2>Manufacturer, OEM Supplier and Exporter of all types of Wheel Balancing Weights</h2>
+                            <div class="btns">
+                                <a href="products.html" class="btn-menu animated fadeInUp scrollto">Our Products</a>
+                                <a href="aboutus.html" class="btn-book animated fadeInUp scrollto">Our Vision</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="bg2.png" class="d-block w-100" alt="Camera" />
+                        <div class="carousel-content">
+                            <h1>Competitive <span>Pricing</span></h1>
+                            <!-- <h2>Get Wheel Balancing Weight</h2> -->
+                            <div class="btns">
+                                <a href="products.html" class="btn-menu animated fadeInUp scrollto">Our Products</a>
+                                <a href="aboutus.html" class="btn-book animated fadeInUp scrollto">Our Vision</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="bg3.png" class="d-block w-100" alt="Exotic Fruits" />
+                        <div class="carousel-content">
+                            <h1>Premium <span> Quality Products</span></h1>
+                            <h2></h2>
+                            <div class="btns">
+                                <a href="products.html" class="btn-menu animated fadeInUp scrollto">Our Products
+                                <a href="aboutus.html" class="btn-book animated fadeInUp scrollto">Our Vision</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-4 order-1 order-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="about-img">
+                <img src="am6.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-8 pt-4 pt-lg-0 order-2 order-lg-1 content">
+              <h1>About Cosmo India</h1>
+              <ul>
+                <li>
+                  <i class="bi bi-check-circle"></i> Cosmo India Pvt. Ltd has
+                  pioneered in the field of manufacturing wheel balancing
+                  weights. CIPL is a synonym of expertise and excellent customer
+                  satisfaction. We have established ourselves as one of the
+                  major market leaders with enviable reputation over the last 25
+                  years. We are the largest wheel balancing weights manufacturer
+                  in India with a plant capacity of 25 million parts per annum.
+                  Apart from our quality excellence and competitive prices, the
+                  greatest advantage of CIPL has always been the short and
+                  promised timeframes of delivery. It is majorly for this
+                  reason, and our quality excellence & competitive prices, CIPL
+                  has added many eminent and renowned Global OEMs like Maruti
+                  Suzuki, Mahindra & Mahindra, Fiat, Wheels India Ltd etc. and
+                  aftermarket customers to its esteemed clientele.
+                </li>
+                <button class="btn-read" style="background-color: blue">
+                  <a href="aboutus.html" style="color: white">Read More...</a>
+                </button>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End About Section -->
+
+      <!-- ======= Events Section ======= -->
+      <section
+        id="events"
+        class="events"
+        style="background-image: url('pik2.jpg')"
+      >
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h1>Know Our Capacity</h1>
+          </div>
+
+          <div
+            class="events-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row event-item">
+                  <div class="col-lg-4">
+                    <img src="am8.jpg" class="img-fluid" alt="" />
+                  </div>
+                  <div class="col-lg-8 pt-4 pt-lg-0 content">
+                    <h3>Facility and Equipment:</h3>
+                    <p class="">
+                      Our state-of-the-art production facility is the
+                      cornerstone of our manufacturing excellence. Spanning in
+                      large area, it is strategically located to optimize
+                      logistics and meet the needs of our valued customers.
+                      Equipped with cutting-edge machinery and advanced
+                      technology, our facility is a hub of innovation and
+                      efficiency.
+                    </p>
+                    <p>
+                      "Our carefully selected equipment and skilled team ensure
+                      precision in manufacturing. We maintain a modern facility
+                      committed to excellence, allowing us to consistently
+                      deliver top-tier wheel balance weights."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="row event-item">
+                  <div class="col-lg-4">
+                    <img src="pik3.jpg" class="img-fluid" alt="" />
+                  </div>
+                  <div class="col-lg-8 pt-4 pt-lg-0 content">
+                    <h3>Production Capacity</h3>
+                    <p class="">
+                      At Cosmo India, we take pride in our robust production
+                      capacity, which stands as a testament to our commitment to
+                      meeting your needs. Our cutting-edge manufacturing
+                      facility is equipped with the latest machinery and
+                      technology, enabling us to produce wheel balance weights
+                      in large quantities, efficiently and with precision.
+                    </p>
+                    <p>
+                      "From small to large orders, we meet your needs reliably.
+                      Our well-organized workflow and skilled team ensure
+                      consistent quality. We adapt to demand changes swiftly,
+                      guaranteeing on-time deliveries. Whether you're a garage
+                      or a major manufacturer, rely on us for prompt, reliable
+                      service."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Events Section -->
+
+
+
+
+     
+
+        <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg" style="background-color: rgb(255, 255, 255);">
+      <div class="container" data-aos="fade-up">
+
+         <div class="section-title">
+              <h1 style="color: black;">Customers</h1>
+            </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div
+                class="member"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img src="tata.png" class="img-fluid" alt="" />
+              </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div
+                class="member"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img src="c1.png" class="img-fluid" alt="" />
+              </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div
+                class="member"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img src="mahindra.png" class="img-fluid" alt="" />
+              </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div
+                class="member"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img src="wheel.png" class="img-fluid" alt="" />
+              </div>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div
+                class="member"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img src="fiat.png" class="img-fluid" alt="" />
+              </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- ======= Why Us Section ======= -->
+      <section id="why-us" class="why-us">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h1 style="color: black;">Why Us</h1>
+            <!-- <p>Why Us</p> -->
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                <span>01</span>
+                <h4>Quality</h4>
+                <p>
+                  We are fully committed to providing the latest and highest
+                  quality products and services.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 mt-4 mt-lg-0">
+              <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                <span>02</span>
+                <h4>Innovation</h4>
+                <p>
+                  We are constantly looking for new ways to improve our products
+                  and services.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4 mt-lg-0">
+              <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                <span>03</span>
+                <h4>Competitive Pricing</h4>
+                <p>
+                  Ability to deliver high-quality products at the most
+                  competitive prices across the globe.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 mt-4 mt-lg-0">
+              <div class="box" data-aos="zoom-in" data-aos-delay="300">
+                <span>04</span>
+                <h4>Customer Satisfaction</h4>
+                <p>
+                  We are dedicated to providing our customers with the best
+                  possible experience
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Why Us Section -->
+
+      <!-- ======= Why Balancing Section ======= -->
+      <section id="about" class="about" style="background-color: rgb(212, 211, 211);">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h1>Why Balancing?</h1>
+          </div>
+
+          <div class="row" style="text-align: center;">
+            
+            <div class="col-lg-4 pt-4 pt-lg-0 order-2 order-lg-1 content">
+              <ul>
+                <li>
+                  <img
+                    src="g2.jpg"
+                    alt=""
+                    width="90%"
+                    height="100%"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 pt-4 pt-lg-0 order-2 order-lg-1 content">
+              <ul>
+                <li>
+                  <img
+                    src="g4.jpg"
+                    alt=""
+                    width="90%"
+                    height="100%"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-lg-4 pt-4 pt-lg-0 order-2 order-lg-1 content"
+              style="font-size: 20px"
+            >
+              <ul>
+                <li>
+                  <img
+                    src="g3.jpg"
+                    alt=""
+                    width="90%"
+                    height="100%"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <section id="why-us" class="why-us" style="background-color: rgb(202, 202, 202);">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                <span>01</span>
+                <i class="fa-solid fa-taxi ic"></i>
+                <p>
+                  "Tires endure constant wear and tear, serving as a crucial
+                  interface between your vehicle and the road. As such, wheels
+                  play a pivotal role in shaping your car's overall
+                  performance."
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 mt-4 mt-lg-0">
+              <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                <span>02</span>
+                <i class="fa-solid fa-screwdriver-wrench ic"></i>
+                <p>
+                  "Continued driving exacerbates weight imbalances, resulting in
+                  instability. This compromises the car's handling, posing a
+                  safty hazard by depriving it of a stable foundation."
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4 mt-lg-0">
+              <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                <span>03</span>
+                <i class="fa-solid fa-truck-monster ic"></i>
+                <p>
+                  "Wheel weights counterbalance tire imbalances, ensuring even
+                  weight distribution properly, and that is resulting in fuel savings,
+                  extended tire life, and enhanced safety and comfort."
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 mt-4 mt-lg-0">
+              <div class="box" data-aos="zoom-in" data-aos-delay="300">
+                <span>04</span>
+                <i class="fa-solid fa-gear ic"></i>
+                <p>
+                  "During rotation, centrifugal forces impact the center of
+                  vehicle's axle, necessitating precise wheel balancing. Despite
+                  advanced techniques, weight imbalances are inevitable."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Why Us Section -->
+
+
+
+
+
+
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg" style="background-color: rgb(255, 255, 255);">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <!-- <h2 style="color: black;">Certifications</h2> -->
+            <h1 style="color: rgb(0, 0, 0)">We Are Certified!</h1>
+          </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div
+                class="member"
+                id="cert1"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img src="cert1.jpg" class="img-fluid" alt="" />
+              </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div
+                class="member"
+                id="cert2"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img src="cert2.jpg" class="img-fluid" alt="" />
+              </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div
+                class="member"
+                id="cert3"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img src="cert3.jpg" class="img-fluid" alt="" />
+              </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div
+                class="member"
+                id="cer43"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img src="cert43.jpg" class="img-fluid" alt="" />
+              </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div
+                class="member"
+                id="cer43"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img src="cert51.jpg" class="img-fluid" alt="" />
+              </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div
+                class="member"
+                id="cer43"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img src="cert52.jpg" class="img-fluid" alt="" />
+              </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div
+                class="member"
+                id="cer43"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <img src="cert53.jpg" class="img-fluid" alt="" />
+              </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <img
+                  src="logo.png"
+                  alt=""
+                  width="70px"
+                  height="70px"
+                />
+                <h3
+                  style="
+                    color: rgb(255, 255, 255);
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                      sans-serif;
+                  "
+                >
+                  Cosmo India
+                </h3>
+                <p>
+                  <strong>Phone:</strong> +917838720900<br />
+                  <strong>Email:</strong> info@cosmo.co.in<br />
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" class="facebook"
+                    ><i class="fa-brands fa-facebook-f"></i></i
+                  ></a>
+                  <a href="#" class="instagram"
+                    ><i class="fa-brands fa-instagram"></i></i
+                  ></a>
+                  <a href="#" class="linkedin"
+                    ><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+               <h4>Location</h4>
+              <ul>
+    
+                <li>
+                 <a href="https://www.google.com/maps/place/Cosmo+India+Pvt.+Ltd./@28.3623777,76.9050371,17z/data=!3m1!4b1!4m6!3m5!1s0x390d3c333c7742a5:0x15313a198106e3fa!8m2!3d28.3623777!4d76.907612!16s%2Fg%2F1tf5j0fk?entry=ttu"><p style="font-size: 17px;"> <i class="fa-solid fa-location-dot" style="font-size: 60px;"></i></span>
+                  131, Sector 3, IMT Manesar, Gurugram, Haryana 122050, IN
+                </p>
+                </a>
+                </li>
+                
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+               <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="products.html">Material Options</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Wheel Balancing Weights</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Balancing Solutions</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Weight Sizes</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Customer Support</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p style="color: rgb(255, 255, 255)">
+                Stay informed with 'Our Newsletter' for the latest updates and
+                exclusive content
+              </p>
+              <form action="" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          Copyright &copy; 2023 <strong><span>Cosmo India Pvt. Ltd</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by
+          <a href="https://www.linkedin.com/in/kaushik-biswas-b78915219/"
+            >Aleczo Media Pvt. Ltd.</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <div class="wp">
+      <a href=" https://wa.me/9811020900" target="_blank"
+        ><img src="wp.png" width="55vw" class="wp_btn"
+      /></a>
+    </div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="fa-solid fa-arrow-up"></i></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    
+    <script src="aos.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="glightbox.min.js"></script>
+    <script src="isotope.pkgd.min.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="main.js"> </script>
+
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+></script>
+
+    <script src="generalJS.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

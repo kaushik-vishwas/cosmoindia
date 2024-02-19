@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Cosmo India Pvt Ltd</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="logo.png" rel="icon" />
+    <link href="apple-touch-icon.png" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="animate.min.css" rel="stylesheet" />
+    <link href="aos.css" rel="stylesheet" />
+    <link
+      href="bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="style.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+    <!-- ======= Top Bar ======= -->
+     <div id="topbar" class="d-flex align-items-center fixed-top">
+  <div class="container">
+    <div class="d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-clock d-flex align-items-center ms-2 ms-md-4">
+          <span id="current-date"></span>
+        </i>
+      </div>
+
+      <div class="languages d-flex align-items-center mt-2 mt-md-0 justify-content-end">
+        <ul class="list-unstyled mb-0">
+          <li id="google_element"><a href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-lg-between"
+      >
+        <img src="logo.png" width="70px" height="70px" alt="" />
+        <h1 class="logo me-auto me-lg-0">
+          <a href="index.html">Cosmo India</a>
+        </h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="aboutus.html" class="active"
+                ><span>About Us</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="aboutus.html">About Cosmo India</a></li>
+                <li><a href="mission.html">Mission Statement</a></li>
+                <li><a href="plants.html">Plants and Facilities</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="comming.html">Awards and Achievements</a></li>
+                <li><a href="comming.html">Directors</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="products.html">Products</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="customers.html">Customers</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="careers.html">Careers</a>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Login</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="http://bit.ly/CosmoIndiaIntranet" target="_blank">Employee Login</a></li>
+                <li><a href="comming.html" target="_blank">Customer Login</a></li>
+                <li><a href="comming.html" target="_blank">Vendor Login</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="nav-link scrollto" href="contact.html">Contact</a>
+            </li>
+            <form class="form-inline my-2 my-lg-0 d-lg-flex" style="margin-left: 20px;">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="margin-right: 10px;">
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+                        <li class="dropdown">
+              <a href="#" onclick="changeCountry('USA')">
+                <span id="selectedCountry">Country</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li><a href="#" onclick="changeCountry('USA')">USA</a></li>
+                <li><a href="#" onclick="changeCountry('India')">India</a></li>
+                <li><a href="#" onclick="changeCountry('Japan')">Japan</a></li>
+                <li>
+                  <a href="#" onclick="changeCountry('Turkey')">Turkey</a>
+                </li>
+                <li><a href="#" onclick="changeCountry('China')">China</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+        <!-- <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a> -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+     <!-- ======= Hero Section ======= -->
+    <section id="hero1" class="d-flex align-items-center">
+      
+    </section>
+    <!-- End Hero -->
+      
+
+    <div class="box" style="
+            margin: auto;
+            width: 80%;
+            height: 100%;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+           ">   
+       <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact" style="background-color: rgb(255, 255, 255);">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <p style="color: rgb(0, 0, 0);">Privacy Policy</p>
+          </div>
+        </div>
+
+
+        <div class="container" data-aos="fade-up">
+          <div class="row mt-5">
+            <div class="col-lg-12">
+                <div class="address">
+                
+                  <h4 style="color: black; font-size: 30px;">Terms and Condition</h4>
+                  <p style="color: black; font-size: 20px;">At Comso India, we take your privacy seriously.  We may share your personal information with third parties in the following circumstances:
+                    Service Providers: We may share your information with trusted third-party service providers who help us operate our website and provide services to you.
+                    Legal Requirements: We may disclose your information to comply with applicable laws, regulations, or legal processes.
+                    Protection of Rights: We may share your information to protect our rights, privacy, safety, or property, as well as that of our users and the public.
+                    Your ChoicesThis Privacy Policy is designed to help you understand how we collect, use, disclose, and safeguard your personal information. By using our website, you consent to the practices described in this Privacy Policy.</p>
+                </div>
+                <div class="address">
+                
+                  <h4 style="font-size: 30px;color: black;">Information We Collect</h4>
+                  <p style="font-size: 20px; color: black;">Personal Information: When you visit our website, we may collect personal information such as your name, email address, phone number, and any other information you provide to us voluntarily.
+                    Automatically Collected Information: We may collect information about your device and how you use our website, including your IP address, browser type, referring URLs, and other usage data.
+                    How We Use Your Information
+                    We use the information we collect for various purposes, including:
+                    Providing Services: To provide the services you request, such as processing orders for wheel balancing weights.
+                    Improving Our Website: To enhance your user experience, troubleshoot technical issues, and analyze user preferences.
+                    Communication: To communicate with you about your orders, respond to inquiries, and provide updates about our products and services.
+                    Marketing: With your consent, we may send you promotional emails and other marketing materials. You can opt out at any time.
+                    Sharing Your Information
+                    We may share your personal information with third parties in the following circumstances:
+                    Service Providers: We may share your information with trusted third-party service providers who help us operate our website and provide services to you.
+                    Legal Requirements: We may disclose your information to comply with applicable laws, regulations, or legal processes.
+                    Protection of Rights: We may share your information to protect our rights, privacy, safety, or property, as well as that of our users and the public.
+                    Your Choices
+                    You have the following rights regarding your personal information:
+                    Access: You can request access to the personal information we hold about you.
+                    Correction: You can request corrections to any inaccuracies in your personal information.
+                    Deletion: You can request the deletion of your personal information, subject to legal limitations.
+                    Securit
+                    We take reasonable measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction.
+                    Changes to This Privacy Policy
+                    We may update this Privacy Policy from time to time. Please review it periodically for changes.
+                    Contact Us
+                    If you have any questions or concerns about our Privacy Policy, please contact us at [Your Contact Information].
+
+</p>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      </div>
+      <!-- End Contact Section -->
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <img
+                  src="logo.png"
+                  alt=""
+                  width="70px"
+                  height="70px"
+                />
+                <h3
+                  style="
+                    color: rgb(255, 255, 255);
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                      sans-serif;
+                  "
+                >
+                  Cosmo India
+                </h3>
+                <p>
+                  <strong>Phone:</strong> +917838720900<br />
+                  <strong>Email:</strong> info@cosmo.co.in<br />
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" class="facebook"
+                    ><i class="fa-brands fa-facebook-f"></i></i
+                  ></a>
+                  <a href="#" class="instagram"
+                    ><i class="fa-brands fa-instagram"></i></i
+                  ></a>
+                  <a href="#" class="linkedin"
+                    ><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+               <h4>Location</h4>
+              <ul>
+    
+                <li>
+                 <a href="https://www.google.com/maps/place/Cosmo+India+Pvt.+Ltd./@28.3623777,76.9050371,17z/data=!3m1!4b1!4m6!3m5!1s0x390d3c333c7742a5:0x15313a198106e3fa!8m2!3d28.3623777!4d76.907612!16s%2Fg%2F1tf5j0fk?entry=ttu"><p style="font-size: 17px;"> <i class="fa-solid fa-location-dot" style="font-size: 60px;"></i></span>
+                  131, Sector 3, IMT Manesar, Gurugram, Haryana 122050, IN
+                </p>
+                </a>
+                </li>
+                
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+               <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="products.html">Material Options</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Wheel Balancing Weights</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Balancing Solutions</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Weight Sizes</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Customer Support</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p style="color: rgb(255, 255, 255)">
+                Stay informed with 'Our Newsletter' for the latest updates and
+                exclusive content
+              </p>
+              <form action="" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          Copyright &copy; 2023 <strong><span>Cosmo India Pvt. Ltd</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by
+          <a href="https://www.linkedin.com/in/kaushik-biswas-b78915219/"
+            >Aleczo Media Pvt. Ltd.</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <div class="wp">
+      <a href=" https://wa.me/9811020900" target="_blank"
+        ><img src="wp.png" width="55vw" class="wp_btn"
+      /></a>
+    </div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="fa-solid fa-arrow-up"></i></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    
+    <script src="aos.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="glightbox.min.js"></script>
+    <script src="isotope.pkgd.min.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="main.js"></script>
+
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+></script>
+
+    <script src="generalJS.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

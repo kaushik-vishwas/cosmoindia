@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Cosmo India Pvt Ltd</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+  <!-- Favicons -->
+  <link href="logo.png" rel="icon" />
+  <link href="apple-touch-icon.png" rel="apple-touch-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+  <!-- Vendor CSS Files -->
+  <link href="animate.min.css" rel="stylesheet" />
+  <link href="aos.css" rel="stylesheet" />
+  <link href="bootstrap.min.css" rel="stylesheet" />
+  <link href="bootstrap-icons.css" rel="stylesheet" />
+  <link href="boxicons.min.css" rel="stylesheet" />
+  <link href="glightbox.min.css" rel="stylesheet" />
+  <link href="swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Template Main CSS File -->
+  <link href="style.css" rel="stylesheet" />
+  <style>
+
+    @media (max-width: 767px) {
+  .marg {
+    margin-left: -100px;
+  }
+}
+  </style>
+</head>
+<body>
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-clock d-flex align-items-center ms-2 ms-md-4">
+            <span id="current-date"></span>
+          </i>
+        </div>
+        <div class="languages d-flex align-items-center mt-2 mt-md-0 justify-content-end">
+          <ul class="list-unstyled mb-0">
+            <li id="google_element"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-lg-between"
+      >
+        <img src="logo.png" width="70px" height="70px" alt="" />
+        <h1 class="logo me-auto me-lg-0">
+          <a href="index.html">Cosmo India</a>
+        </h1>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>About Us</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="aboutus.html">About Cosmo India</a></li>
+                <li><a href="mission.html">Mission Statement</a></li>
+                <li><a href="plants.html">Plants and Facilities</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="comming.html">Awards and Achievements</a></li>
+                <li><a href="comming.html">Directors</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link scrollto active" href="products.html">Products</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="customers.html">Customers</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="careers.html">Careers</a>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Login</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="http://bit.ly/CosmoIndiaIntranet">Employee Login</a></li>
+                <li><a href="comming.html">Customer Login</a></li>
+                <li><a href="comming.html">Vendor Login</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="nav-link scrollto" href="contact.html">Contact</a>
+            </li>
+            <form class="form-inline my-2 my-lg-0 d-lg-flex" style="margin-left: 20px;">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="margin-right: 10px;">
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+                        <li class="dropdown">
+              <a href="#" onclick="changeCountry('India')">
+                <span id="selectedCountry">Country</span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul>
+                <li><a href="#" onclick="changeCountry('India')">India</a></li>
+                <li><a href="#" onclick="changeCountry('United Kingdom')">United Kingdom</a></li>
+                <li><a href="#" onclick="changeCountry('USA')">USA</a></li>
+                <li><a href="#" onclick="changeCountry('Canada')">Canada</a></li>
+                <li><a href="#" onclick="changeCountry('Australia')">Australia</a></li>
+                <li><a href="#" onclick="changeCountry('Japan')">Japan</a></li>
+                <li><a href="#" onclick="changeCountry('Korea')">Korea</a></li>
+                <li><a href="#" onclick="changeCountry('UAE')">UAE</a></li>
+                <li><a href="#" onclick="changeCountry('Germany')">Germany</a></li>
+                <li><a href="#" onclick="changeCountry('Spain')">Spain</a></li>
+                <li><a href="#" onclick="changeCountry('France')">France</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+        <!-- <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a> -->
+      </div>
+    </header>
+    <!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero1" class="d-flex align-items-center">
+  </section>
+  <!-- End Hero -->
+  <div style="padding: 40px;">
+    <h4 style="color: black; font-size: 35px;">Products :</h4>
+    <p style="color: black; font-size: 20px;">All of our product range comes with Cosmo Branding. However, private branding options are also available. Please contact us to discuss your requirements.</p>
+    <div class="address" style="padding: 40px 0px 40px 0;">
+      <h4 style="color: black; font-size: 40px;">Steel (Fe) Wheel Balancing Weight</h4>
+      <p style="font-size: 20px; color: black;">Our range of steel weights comes in Grey Coated and Zinc Electroplated variants to deliver corrosion resistant high-quality products. OE manufacturers prefer steel weights due to a lower carbon footprint, lower cost, and eco-friendly recycling. The whole range of Steel Weights is available in OE as well as budget options, ensuring three different price points for each product.</p>
+      <h4 style="color: black; font-size: 30px;">Adhesive Weights</h4>
+      <p style="font-size: 20px; color: black;">From -20°C to up to 50°C, our wide range of adhesives is available for all weather conditions and budgets. Each of the following variants is available in strips ranging from 5 grams to 100 grams and in rolls of 5 Kgs. The whole range is 3.8 mm thick and comes with an easy liner for easy peel-off and application. Our range is suitable for Four-Wheeler and Two-Wheelers with widths in the range of 15mm up to 22mm.</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="p_10.jpg" class="card-img-top" alt="Card Image">
+            <div class="card-body">
+              <h5 class="card-title">Blanks of 10g</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="p_5g.jpg" class="card-img-top" alt="Card Image">
+            <div class="card-body">
+              <h5 class="card-title">Blanks of 5g</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="p_5g10g.jpg" class="card-img-top" alt="Card Image">
+            <div class="card-body">
+              <h5 class="card-title">Alternate Blanks of 10g & 5g</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="p_30g.jpg" class="card-img-top" alt="Card Image">
+            <div class="card-body">
+              <h5 class="card-title">Uni Body Strips</h5>
+              <p>Comes with custom radius packaging.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="p_adh.jpg" class="card-img-top" alt="Card Image">
+            <div class="card-body">
+              <h5 class="card-title">Adhesive Weight Rolls</h5>
+              <p>Cut Up Use and easy to Automate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="address" style="padding: 40px 0px 40px 0;">
+      <h4 style="color: black; font-size: 30px;">Clip On Weights</h4>
+      <p style="font-size: 20px; color: black;">The Clip On Weights range from 5 Grams to 100 Grams.<br>The fitment profile is ideally suitable for all Passenger Vehicles and is customizable as per requirement.</p>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <img src="p_32.jpg" class="card-img-top" alt="Card Image">
+        <div class="card-body">
+          <h5 class="card-title">OE Weights</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" style="margin-left: 80px ;">
+      <div class="card marg">
+        <img src="p_31.jpg" class="card-img-top" alt="Card Image">
+        <div class="card-body">
+          <h5 class="card-title">Budget Weights</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="address" style="padding: 40px 0px 40px 0;">
+      <h4 style="color: black; font-size: 40px;">Lead (Pb) Wheel Balancing Weights</h4>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="p_33g.jpg" class="card-img-top" alt="Card Image">
+            <div class="card-body">
+              <h5 class="card-title">Clip On Weight for Passenger and Commercial Vehicles</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" style="margin-left: 80px ;">
+          <div class="card marg">
+            <img src="p_10g5g.jpg" class="card-img-top" alt="Card Image">
+            <div class="card-body">
+              <h5 class="card-title">Adhesive Weight for 4 Wheelers and 2 Wheelers</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <img
+                  src="logo.png"
+                  alt=""
+                  width="70px"
+                  height="70px"
+                />
+                <h3
+                  style="
+                    color: rgb(255, 255, 255);
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                      sans-serif;
+                  "
+                >
+                  Cosmo India
+                </h3>
+                <p>
+                  <strong>Phone:</strong> +917838720900<br />
+                  <strong>Email:</strong> info@cosmo.co.in<br />
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" class="facebook"
+                    ><i class="fa-brands fa-facebook-f"></i></i
+                  ></a>
+                  <a href="#" class="instagram"
+                    ><i class="fa-brands fa-instagram"></i></i
+                  ></a>
+                  <a href="#" class="linkedin"
+                    ><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+               <h4>Location</h4>
+              <ul>
+    
+                <li>
+                 <a href="https://www.google.com/maps/place/Cosmo+India+Pvt.+Ltd./@28.3623777,76.9050371,17z/data=!3m1!4b1!4m6!3m5!1s0x390d3c333c7742a5:0x15313a198106e3fa!8m2!3d28.3623777!4d76.907612!16s%2Fg%2F1tf5j0fk?entry=ttu"><p style="font-size: 17px;"> <i class="fa-solid fa-location-dot" style="font-size: 60px;"></i></span>
+                  131, Sector 3, IMT Manesar, Gurugram, Haryana 122050, IN
+                </p>
+                </a>
+                </li>
+                
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+               <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="products.html">Material Options</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Wheel Balancing Weights</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Balancing Solutions</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Weight Sizes</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <a href="#">Customer Support</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p style="color: rgb(255, 255, 255)">
+                Stay informed with 'Our Newsletter' for the latest updates and
+                exclusive content
+              </p>
+              <form action="" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          Copyright &copy; 2023 <strong><span>Cosmo India Pvt. Ltd</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by
+          <a href="https://www.linkedin.com/in/kaushik-biswas-b78915219/"
+            >Aleczo Media Pvt. Ltd.</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+  <div class="wp">
+    <a href="https://wa.me/9811020900" target="_blank"><img src="wp.png" width="55vw" class="wp_btn" /></a>
+  </div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="aos.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="glightbox.min.js"></script>
+  <script src="isotope.pkgd.min.js"></script>
+  <script src="swiper-bundle.min.js"></script>
+  <script src="validate.js"></script>
+  <!-- Template Main JS File -->
+  <script src="main.js"></script>
+  <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+  <script src="generalJS.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  <script>
+  // Function to scroll to the bottom of the page smoothly
+  function scrollToBottom() {
+    const startPosition = window.scrollY;
+    const targetPosition = document.body.scrollHeight;
+    const distance = targetPosition - startPosition;
+    const duration = 25000; // Adjust the duration (in milliseconds) to control the speed of scrolling
+
+    let startTime;
+
+    function scrollAnimation(currentTime) {
+      if (!startTime) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const scrollProgress = Math.min(timeElapsed / duration, 1);
+
+      window.scrollTo(0, startPosition + distance * scrollProgress);
+
+      if (timeElapsed < duration) {
+        requestAnimationFrame(scrollAnimation);
+      }
+    }
+
+    requestAnimationFrame(scrollAnimation);
+  }
+
+  // Add an event listener to call the scrollToBottom function when the page loads
+  window.addEventListener('load', scrollToBottom);
+</script>
+
+</body>
+</html>
